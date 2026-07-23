@@ -6,10 +6,8 @@
 
 - name: Satellite Storage | Install required packages
   package:
-    name: "{{ item }}"
-    state: latest
-  with_items:
-  - lvm2
+    name: lvm2
+    state: present
 
 - name: "Create {{ satellite_vg }} Volume Group"
   lvg:
