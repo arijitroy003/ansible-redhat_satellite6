@@ -1,10 +1,10 @@
 # redhat\_satellite6\_storage
-An Ansible role for configuring logical volumes and mount points for Satellite Server(s) and Satellite Capsule(s).
+An Ansible role for configuring logical volumes and mount points for Satellite Server(s) and Satelite Capsule(s).
 
 ## Warning
-This role doesn't pay attention if the mount points already exist or not, it will just blindly try to create them.
+This role doesn't pay attention if the moutn points already exist or not, it will just blindly try to create them.
 Older versions of this role attempted to detect if directory already existed and copy to temporary location and copy back,
-it was too complicated.
+it was to complicated.
 
 ## Options
 
