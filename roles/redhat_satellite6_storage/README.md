@@ -1,10 +1,10 @@
 # redhat\_satellite6\_storage
-An Ansible role for configuring logical volumes and mount points for Satellite Server(s) and Satellite Capsule(s).
+An Ansible role for configuring logical volumes and mount points for Satellite Server(s) and Satelite Capsule(s).
 
 ## Warning
-This role doesn't pay attention if the mount points already exist or not, it will just blindly try to create them.
+This role doesn't pay attention if the moutn points already exist or not, it will just blindly try to create them.
 Older versions of this role attempted to detect if directory already existed and copy to temporary location and copy back,
-it was too complicated.
+it was to complicated.
 
 ## Options
 
@@ -13,7 +13,7 @@ See [Satellite 6 Installation Guide - 1.2.1. Storage Requirements](https://acces
 | parameter                      | default       | description
 |--------------------------------|---------------|------------
 | `satellite_pvs`                | /dev/vdb      | Physical volume(s) to use for Satellite storage.
-| `satellite_vg`                 | vg\_satellite | Volume group to use or create for Satellite storage.
+| `satellite_vg`                 | satellite\_vg | Volume group to use or create for Satellite storage.
 | `satellite_type`               |               | One of ['master', 'capsule'] to configure the storage for the given type.
 | `satellite_lv_pulp_cache_size` | 20g           | Initial size of the `/var/cache/pulp` volume.
 | `satellite_lv_pulp_size`       | 500g          | Initial size of the `/var/lib/pulp` volume.

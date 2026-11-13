@@ -35,7 +35,7 @@
   with_items: "{{ mounts }}"
 
 - name: Satellite Storage | Include task list to create mount points
-  include_tasks: create_mount.yml
+  include: create_mount.yml
   vars:
     lv: "{{ item.0.lv }}"
     size: "{{ item.0.size }}"
