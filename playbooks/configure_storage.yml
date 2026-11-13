@@ -1,4 +1,4 @@
-- name: Satellite | Configure Storage
+- name: Satelllite | Configure Storage
   hosts: all
   gather_facts: True
   become: True
